@@ -84,8 +84,10 @@ namespace Vuforia
             }
 
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
-        }
 
+            PlayerPrefs.SetInt("begun", 1);
+        }
+        
 
         private void OnTrackingLost()
         {

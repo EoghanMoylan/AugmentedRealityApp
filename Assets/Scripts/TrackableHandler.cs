@@ -14,7 +14,7 @@ public class TrackableHandler : MonoBehaviour {
 
         if (mTrackableBehaviour)
         {
-            //mTrackableBehaviour.RegisterTrackableEventHandler(this);
+          //  mTrackableBehaviour.RegisterTrackableEventHandler(this);
         }
     }
 
