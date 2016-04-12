@@ -27,7 +27,11 @@ public class SceneSelect : MonoBehaviour
         }
 
         Application.LoadLevel(currentScene);
+    }
 
+    public void about()
+    {
+        Application.LoadLevel("about");
     }
     public void refresh()
     {
