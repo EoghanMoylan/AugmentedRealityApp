@@ -68,6 +68,7 @@ namespace Vuforia
 
         private void OnTrackingFound()
         {
+            PlayerPrefs.SetInt("begun", 1);
             Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
             Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
 
@@ -85,7 +86,6 @@ namespace Vuforia
 
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
 
-            PlayerPrefs.SetInt("begun", 1);
         }
         
 
