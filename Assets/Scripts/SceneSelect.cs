@@ -19,7 +19,7 @@ public class SceneSelect : MonoBehaviour
            
         if(currentScene == "alt")
         {
-            currentScene = "siteMapScene";
+            currentScene = "test1";
         }
         else
         {

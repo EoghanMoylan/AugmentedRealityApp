@@ -5,6 +5,7 @@ public class BeginExperience : MonoBehaviour
 {
     private int begun;
     private Camera cam;
+    public GameObject toLoad;
 	// Use this for initialization
     void Start()
     {
@@ -25,5 +26,6 @@ public class BeginExperience : MonoBehaviour
     private void setUpBegining()
     {
         cam.cullingMask |= 1 << LayerMask.NameToLayer("Hall");
+        toLoad.SetActive(true);
     }
 }
