@@ -71,10 +71,12 @@ namespace Vuforia
         {
 			//hide = new Hide ();
 			//hide.invisible();
-
-			hide.GetComponent<Hide> ().visible ();
-			AudioSource Ambient = GetComponent<AudioSource> ();
-			Ambient.Play ();
+            if(hide != null)
+            {
+                hide.GetComponent<Hide>().visible();
+            }
+			//AudioSource Ambient = GetComponent<AudioSource> ();
+			//Ambient.Play ();
 
             Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
             Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
@@ -97,7 +99,10 @@ namespace Vuforia
 
         private void OnTrackingLost()
         {
-			hide.GetComponent<Hide> ().invisible ();
+            if (hide != null)
+            {
+                hide.GetComponent<Hide>().invisible();
+            }
 
             Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
             Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
